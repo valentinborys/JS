@@ -1,14 +1,11 @@
-var x = 5;
-var a = 1;
-var b = 1;
-var c;
-for (let i = 3; i <= x; i++)
-{
-    c = b;
-    b = a + b;
-    a = c;
+let a = 1;
+let b = 1;
+function fib(n) {
+    for(i = 3; i<=n; i++){
+    let c = a + b;
+    a = b;
+    b = c;
 }
-console.log(b);
-
-
-
+return b
+}    
+alert (fib(n))
